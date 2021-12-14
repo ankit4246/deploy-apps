@@ -11,18 +11,18 @@ pipeline {
         
         stage('Testing') {
             steps {
-                    "npm test"
+                echo 'The Artifact will be tested'
             }
         }
         stage('Staging') {
             steps {
-                    "npm install"
+                echo 'The Artifact is staged onto the staging server'
             }
         }
         
         stage('Deploy') {
             steps {
-                "npm start"
+                echo 'The software will now be deployed!'
             }
         }
     }    
