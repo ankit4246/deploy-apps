@@ -8,11 +8,7 @@ pipeline {
                 echo 'The Code will be now be built into an artifact'
             }
         }
-        stage('Artifact Archiving') {
-            steps {
-                echo 'The Artifact will be uploaded to an artifact repository'
-            }
-        }
+        
         stage('Testing') {
             steps {
                 echo 'The Artifact will be tested'
